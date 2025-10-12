@@ -108,7 +108,6 @@ footer p {
     padding-left: 30px;
 }
 
-/* Мобильная версия */
 .header-nav {
     display: flex;
     flex-direction: column;
@@ -153,4 +152,5 @@ main {
         order: 0;
     }
 }
+
 
