@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB. Задание 3. Мостивенко 21/2</title>
+    <title>WEB. Задание 2. Мостивенко 21/2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container header-content">
-            <img src="https://avatars.mds.yandex.net/i?id=b6ce8cde2cc20c01e02534ffe0effd9b5a2621a9-10812288-images-thumbs&n=13" class="logo-img">
-            <div class="site-title">Учебный сайт</div>
-        </div>
+      <div>
+        <div class="logo"><a href="#"><img src="https://avatars.mds.yandex.net/i?id=b6ce8cde2cc20c01e02534ffe0effd9b5a2621a9-10812288-images-thumbs&n=13" alt="logo" style="width: 50px; height: 50px;"></a></div>
+        <nav>
+          <div class="header-nav">
+            <a href="#links">Ссылки</a>
+            <a href="#table">Таблица</a>
+            <a href="#form">Форма</a>
+          </div>
+        </nav>
+        <h1 class="site-title">Учебный сайт</h1>
+      </div>
     </header>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#links">Ссылки</a></li>
-                <li><a href="#table">Таблица</a></li>
-                <li><a href="#form">Форма</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <div class="container">
         <main>
-            <section class="content-section">
-                <h1>WEB. Задание 3. Мостивенко 21/2</h1>
+            <section id ="heading" class="content-section">
+                <h1>WEB. Задание 2. Мостивенко 21/2</h1>
             </section>
-
             <section id="links" class="content-section">
                 <h2>Список гиперссылок</h2>
                 <ul>
@@ -42,14 +37,14 @@
                     </li>
                     <li><a href="index.html">Сокращенная ссылка на внутреннюю страницу</a></li>
                     <li><a href="/">Сокращённая ссылка на главную страницу</a></li>
-                    <li><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
+                    <li><a href="#shape">Ссылка на фрагмент текущей страницы</a></li>
                     <li><a href="/index.html?student=21/2&subject=WEB&task=1">Ссылка с тремя параметрами в URL</a></li>
                     <li><a href="/index.html?id=s0196051">Ссылка с параметром id в URL</a></li>
                     <li><a href="./index.html">Относительная ссылка на страницу в текущем каталоге</a></li>
                     <li><a href="about/aboutus.html">Относительная ссылка на страницу в каталоге about</a></li>
                     <li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
                     <li><a href="../../index.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
-                    <li><a href="#form">Контекстная ссылка</a> в тексте абзаца</li>
+                    <li><a href="#a1">Контекстная ссылка</a> в тексте абзаца</li>
                     <li><a href="https://www.kubsu.ru/ru/fktipm/prikladnaya-informatika-iskusstvennyy-intellekt-i-mashinnoe-obuchenie#zone-footer">Ссылка на фрагмент страницы стороннего сайта</a></li>
                     <li>
                         <p>Ссылки из прямоугольных и круглых областей картинки (HTML-тег map):
@@ -77,24 +72,47 @@
             </section>
 
             <section id="table" class="content-section">
-                <h2>Таблица</h2>
+               <h2>Таблица</h2>
                 <table>
-                    <thead>
-                        <tr>
-                            <th>ФИО</th>
-                            <th>Оценка</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Иванов И.И.</td>
-                            <td>Отлично</td>
-                        </tr>
-                        <tr>
-                            <td>Петров П.П.</td>
-                            <td>Хорошо</td>
-                        </tr>
-                    </tbody>
+                <tr>
+                    <th rowspan="2">Колонка 1</th>
+                    <th colspan="2">Группа колонок</th>
+                    <th rowspan="2">Колонка 4</th>
+                </tr>
+                <tr>
+                    <th>Колонка 2</th>
+                    <th>Колонка 3</th>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
                 </table>
             </section>
 
@@ -132,18 +150,18 @@
                     
                     <label>
                         Любимый язык программирования: <br>
-                        <select name="language[]" multiple>
-                            <option value="pascal">Pascal</option>
-                            <option value="c">C</option>
-                            <option value="cpp">C++</option>
-                            <option value="javascript">JavaScript</option>
-                            <option value="php">PHP</option>
-                            <option value="python">Python</option>
-                            <option value="java">Java</option>
-                            <option value="haskel">Haskel</option>
-                            <option value="clojure">Clojure</option>
-                            <option value="prolog">Prolog</option>
-                            <option value="scala">Scala</option>
+                        <select name="language" multiple>
+                            <option selected>Pascal</option>
+                            <option>C</option>
+                            <option>C++</option>
+                            <option>JavaScript</option>
+                            <option>PHP</option>
+                            <option>Python</option>
+                            <option>Java</option>
+                            <option>Haskel</option>
+                            <option>Clojure</option>
+                            <option>Prolog</option>
+                            <option>Scala</option>
                         </select>
                     </label><br>
 
