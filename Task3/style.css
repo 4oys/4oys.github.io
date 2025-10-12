@@ -42,7 +42,8 @@ nav {
 
 .header-nav a {
     color: white;
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 3px;
@@ -131,3 +132,4 @@ footer p {
     order: 4;
   }
 }
+
