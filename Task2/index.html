@@ -6,21 +6,18 @@
 </head>
 <body>
     <header>
-        <div class="container header-content">
-            <img src="https://avatars.mds.yandex.net/i?id=b6ce8cde2cc20c01e02534ffe0effd9b5a2621a9-10812288-images-thumbs&n=13" class="logo-img">
-            <div class="site-title">Учебный сайт</div>
-        </div>
+      <div>
+        <div class="logo"><a href="#"><img src="https://avatars.mds.yandex.net/i?id=b6ce8cde2cc20c01e02534ffe0effd9b5a2621a9-10812288-images-thumbs&n=13" alt="logo" style="width: 50px; height: 50px;"></a></div>
+        <nav>
+          <div class="header-nav">
+            <a href="#links">Ссылки</a>
+            <a href="#table">Таблица</a>
+            <a href="#form">Форма</a>
+          </div>
+        </nav>
+        <h1 class="site-title">Учебный сайт</h1>
+      </div>
     </header>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#links">Ссылки</a></li>
-                <li><a href="#table">Таблица</a></li>
-                <li><a href="#form">Форма</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <div class="container">
         <main>
@@ -47,7 +44,7 @@
                     <li><a href="about/aboutus.html">Относительная ссылка на страницу в каталоге about</a></li>
                     <li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
                     <li><a href="../../index.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
-                    <li><a href="#link">Контекстная ссылка</a> в тексте абзаца</li>
+                    <li><a href="#a1">Контекстная ссылка</a> в тексте абзаца</li>
                     <li><a href="https://www.kubsu.ru/ru/fktipm/prikladnaya-informatika-iskusstvennyy-intellekt-i-mashinnoe-obuchenie#zone-footer">Ссылка на фрагмент страницы стороннего сайта</a></li>
                     <li>
                         <p>Ссылки из прямоугольных и круглых областей картинки (HTML-тег map):
@@ -75,24 +72,47 @@
             </section>
 
             <section id="table" class="content-section">
-                <h2>Таблица</h2>
+               <h2>Таблица</h2>
                 <table>
-                    <thead>
-                        <tr>
-                            <th>ФИО</th>
-                            <th>Оценка</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Иванов И.И.</td>
-                            <td>Отлично</td>
-                        </tr>
-                        <tr>
-                            <td>Петров П.П.</td>
-                            <td>Хорошо</td>
-                        </tr>
-                    </tbody>
+                <tr>
+                    <th rowspan="2">Колонка 1</th>
+                    <th colspan="2">Группа колонок</th>
+                    <th rowspan="2">Колонка 4</th>
+                </tr>
+                <tr>
+                    <th>Колонка 2</th>
+                    <th>Колонка 3</th>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
                 </table>
             </section>
 
@@ -130,7 +150,7 @@
                     
                     <label>
                         Любимый язык программирования: <br>
-                        <select name="language[]" multiple>
+                        <select name="language" multiple>
                             <option selected>Pascal</option>
                             <option>C</option>
                             <option>C++</option>
@@ -147,7 +167,7 @@
 
                     <label>
                         Биография <br>
-                        <textarea name="about me" placeholder="Напишите о себе"></textarea>
+                        <textarea name="biography" placeholder="Напишите о себе"></textarea>
                     </label><br>
 
                     <label>
@@ -167,7 +187,8 @@
         </div>
     </footer>
 </body>
-
 </html>
+
+
 
 
