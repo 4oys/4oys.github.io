@@ -42,8 +42,7 @@ nav {
 
 .header-nav a {
     color: white;
-    display: flex;
-    flex-direction: column;
+    text-decoration: none;
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 3px;
@@ -109,27 +108,49 @@ footer p {
     padding-left: 30px;
 }
 
-@media (min-width: 768px) {
+/* Мобильная версия */
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-  .header-nav {
-    flex-direction: row;
-  }
-
-  #table {
+#table {
     order: 1; 
-  }
+}
 
-  #heading {
+#heading {
     order: 2;
-  }
+}
 
-  #links {
+#links {
     order: 3;
-  }
+}
 
-  #form {
+#form {
     order: 4;
-  }
+}
+
+@media (min-width: 768px) {
+    .header-nav {
+        flex-direction: row;
+    }
+
+    main {
+        display: block;
+    }
+
+    #table,
+    #heading,
+    #links,
+    #form {
+        order: 0;
+    }
 }
 
