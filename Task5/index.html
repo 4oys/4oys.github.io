@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Калькулятор стоимости товара</title>
+  </head>
+
+  <body>
+    <form>
+      <h1>Калькулятор стоимости товара</h1>
+
+      <input
+        name="number"
+        type="text"
+        placeholder="Введите количество товара"
+        required
+      />
+
+      <select name="select">
+        <option value="0">Хлеб пшеничный</option>
+        <option value="1">Молоко 2.5%</option>
+        <option value="2">Яйца куриные (10 шт.)</option>
+        <option value="3">Сливочное масло 180 г</option>
+        <option value="4">Сыр российский 1 кг</option>
+      </select>
+
+      <button id="button1" >Посчитать</button>
+
+      <div id="result"></div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
