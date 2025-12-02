@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Калькулятор стоимости услуги</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      .content{
+        width: 400px;
+        margin: 30px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h2>Калькулятор стоимости услуги</h2>
+
+      <label>Количество:</label>
+      <input type="text" id="count" /><br /><br />
+
+
+      <label>Тип товара:</label><br />
+      <input type="radio" name="type" value="1" /> Замена масла<br />
+      <input type="radio" name="type" value="2" /> Ремонт двигателя<br />
+      <input type="radio" name="type" value="3" /> Шиномонтаж<br /><br />
+
+
+      <div id="options_block" class="hidden">
+        <label>Опции товара:</label>
+        <select id="options_select">
+          <option value="400">Диагностика</option>
+          <option value="800">Капитальный ремонт</option>
+          <option value="1000">Замена двигателя</option>
+        </select>
+      </div>
+
+
+      <div id="property_block" class="hidden">
+        <label>
+          <input type="checkbox" id="property_checkbox" />
+          Балансировка колес (+150)
+        </label>
+      </div>
+
+      <br /><br />
+
+      <div id="result">Стоимость: 0 рублей</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
