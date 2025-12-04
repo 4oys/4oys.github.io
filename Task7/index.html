@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер изображений - Задание 7</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .swiper {
+            width: 100%;
+            margin: 0 auto 30px;
+        }
+        
+        .swiper-wrapper {
+            align-items: center;
+        }
+        
+        .swiper-slide {
+            height: 400px;
+            width: 400px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            font-size: 20px;
+            color: #333;
+        }
+        
+        .swiper-pagination {
+            position: relative;
+            margin-top: 20px;
+        }
+        
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #ccc;
+            opacity: 1;
+            margin: 0 8px
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #007aff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Галерея изображений</h1>
+        
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Max_logo_2025.png/500px-Max_logo_2025.png"></div>
+
+                <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/640px-VK_Compact_Logo_%282021-present%29.svg.png"></div>
+
+                <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1024px-Telegram_2019_Logo.svg.png"></div>
+
+                <div class="swiper-slide"><img src="https://pr6.zoon.ru/dyPvBSnkUfZfaFkSGfWf8A/3056x3116,q90/2SyAZt3JPOD7jn44_auBx7BbFVw5pJIMPJR4eCKOpFep4PEFTGorahWp7JvJSiLH8WfUAGe2Q3jFQRQVAIqOXdhcSxjteRcMynrKJH-M-R4"></div>
+
+                <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1024px-Logo_of_Twitter.svg.png"></div>
+
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/4e/62/5c/4e625c0a450dc86d685a6e0ee86e3d6d.jpg"></div>
+
+                <div class="swiper-slide"><img src="https://static.insales-cdn.com/files/1/4871/7877383/original/0be6d77a4368b110b77c1437d13198bd.jpg"></div>
+
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/de/e9/bb/dee9bb672a2a3ffb8d5a080a6da89471.jpg"></div>
+
+            </div>
+
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        
+        <div class="info">
+            <p>Используйте стрелки для навигации</p>
+            <p>Всего изображений: 8</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
+        });
+    </script>
+</body>
+</html>
