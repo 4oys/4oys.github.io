@@ -186,8 +186,6 @@
             Написать нам
         </button>
         
-        <div class="overlay" id="overlay"></div>
-        
         <div class="form-popup" id="formPopup">
             <div class="form-header">
                 <h2>Форма обратной связи</h2>
@@ -261,7 +259,6 @@
         
         function closeForm() {
             formPopup.style.display = 'none';
-            overlay.style.display = 'none';
             successMessage.style.display = 'none';
             errorMessage.style.display = 'none';
             
@@ -269,11 +266,9 @@
         }
         
         closeFormBtn.addEventListener('click', closeForm);
-        overlay.addEventListener('click', closeForm);
         
         window.addEventListener('popstate', function(event) {
             formPopup.style.display = 'none';
-            overlay.style.display = 'none';
         });
         
         function saveFormData() {
@@ -355,4 +350,5 @@
         });
     </script>
 </body>
+
 </html>
