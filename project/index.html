@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFinder - подбор автомобилей</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-bg"></div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">AutoFinder</div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#services">УСЛУГИ</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Подбор авто</a></li>
+                            <li><a href="#">Проверка</a></li>
+                            <li><a href="#">Trade-in</a></li>
+                            <li><a href="#">Автокредит</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#process">КАК РАБОТАЕМ</a></li>
+                    <li class="nav-item"><a href="#pricing">ТАРИФЫ</a></li>
+                    <li class="nav-item"><a href="#contacts">КОНТАКТЫ</a></li>
+                    <li class="nav-item">
+                        <button class="btn-contact" id="contact-btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                    </li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+            </div>
+        </nav>
+        
+        <div class="header-content">
+            <div class="container">
+                <h1>Профессиональный подбор автомобилей</h1>
+                <p class="subtitle">Найдем для вас идеальный автомобиль с проверкой и гарантией</p>
+                <button class="btn-primary" id="main-order-btn">ПОДОБРАТЬ АВТО</button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#services">УСЛУГИ</a></li>
+                <li><a href="#process">КАК РАБОТАЕМ</a></li>
+                <li><a href="#pricing">ТАРИФЫ</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
+                <li><button class="btn-contact-mobile" id="mobile-contact-btn">ЗАКАЗАТЬ ЗВОНОК</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="services" id="services">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Подбор автомобиля</h3>
+                    <p>Поиск по вашим критериям</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Полная проверка</h3>
+                    <p>Диагностика и проверка истории</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Сопровождение сделки</h3>
+                    <p>Переговоры и оформление</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Постановка на учет</h3>
+                    <p>Помощь в регистрации в ГИБДД</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="process" id="process">
+            <h2>Как мы работаем</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Заявка</h3>
+                    <p>Оставляете заявку на сайте</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Подбор</h3>
+                    <p>Ищем подходящие варианты</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Проверка</h3>
+                    <p>Диагностируем автомобиль</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Покупка</h3>
+                    <p>Сопровождаем сделку</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <h2>Тарифы</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Базовый</h3>
+                    <div class="price">15 000 ₽</div>
+                    <ul>
+                        <li>Подбор 3 вариантов</li>
+                        <li>Проверка истории</li>
+                        <li>Техосмотр</li>
+                    </ul>
+                    <button class="btn-price">Выбрать</button>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Популярный</div>
+                    <h3>Стандарт</h3>
+                    <div class="price">25 000 ₽</div>
+                    <ul>
+                        <li>Подбор 5 вариантов</li>
+                        <li>Полная диагностика</li>
+                        <li>Сопровождение сделки</li>
+                    </ul>
+                    <button class="btn-price">Выбрать</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form" id="contacts">
+            <h2>Оставить заявку</h2>
+            <form id="mainForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Телефон" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Пожелания к авто" rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AutoFinder</h3>
+                    <p>Подбор автомобилей с 2015 года</p>
+                    <p>Телефон: 8 (800) 555-35-35</p>
+                    <p>Email: info@autofinder.ru</p>
+                </div>
+                <div class="footer-section">
+                    <p>© 2023 AutoFinder</p>
+                    <p><a href="#">Политика конфиденциальности</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>ПОДОБРАТЬ АВТО</h3>
+                <button class="modal-close" id="modalClose">×</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-subtitle">Заказать звонок</p>
+                <form id="callbackForm">
+                    <div class="form-group">
+                        <label>Ваше имя</label>
+                        <input type="text" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <button type="submit" class="modal-submit-btn">Позвоните мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
