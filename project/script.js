@@ -241,23 +241,4 @@ document.addEventListener('DOMContentLoaded', function() {
             openModal();
         });
     });
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        if (anchor.closest('.dropdown')) return;
-        
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (!href || href === '#' || href === '') return;
-            
-            e.preventDefault();
-            const target = document.querySelector(href);
-            
-            if (target) {
-                window.scrollTo({
-                    top: target.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
 });
